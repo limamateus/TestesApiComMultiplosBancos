@@ -16,7 +16,7 @@ namespace TestesApiComMultiplosBancos.Controllers
 
         [HttpGet]
 
-        public IActionResult Get([FromHeader] string nomeDoBanco, [FromHeader] string tabela)
+        public async Task<IActionResult> Get([FromHeader] string nomeDoBanco, [FromHeader] string tabela)
         {
             try
             {
